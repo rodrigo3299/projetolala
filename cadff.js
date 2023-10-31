@@ -51,6 +51,10 @@ app.post("/cadastrousuario", async(req, res)=>{
        }
 
 });
+app.get("/cadastrousuario", async(req, res)=>{
+    res.sendFile(__dirname +"/cadastrousuario.html");
+})
+
 
 app.get("/", async(req, res)=>{
     res.sendFile(__dirname +"/index.html");
